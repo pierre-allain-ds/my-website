@@ -137,6 +137,16 @@ main {
   margin-top: 2rem;
 }
 
+.portrait {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  margin-bottom: 1.25rem;
+}
+
 .intro h1 {
   margin-bottom: 0.5rem;
 }
@@ -149,6 +159,32 @@ main {
 
 .intro .bio {
   margin-bottom: 2rem;
+}
+
+.social-profile-links {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.social-profile-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 0.4rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.social-profile-link:hover {
+  color: var(--text);
+  border-color: #c0c0bb;
+  text-decoration: none;
 }
 
 .page-links {
@@ -214,6 +250,11 @@ main {
   border-bottom: 1px solid var(--border);
 }
 
+a.post-title {
+  font-weight: 500;
+  display: block;
+}
+
 .post-date {
   font-size: 0.85rem;
   color: var(--text-secondary);
@@ -229,6 +270,31 @@ main {
   font-size: 0.92rem;
   color: var(--text-secondary);
   margin-top: 0.2rem;
+}
+
+/* Blog post pages */
+.post-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.post-back {
+  color: var(--text-secondary);
+}
+
+.post-back:hover {
+  color: var(--text);
+}
+
+.post-standfirst {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  margin-bottom: 1.75rem;
 }
 
 /* Running */
